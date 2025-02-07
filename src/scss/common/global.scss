@@ -3,7 +3,7 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
-  
+
   --color-fg: #fff;
   --color-fg-secondary: #999;
   --color-bg: #080808;
@@ -79,8 +79,8 @@ ul {
 
 img {
   display: block;
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 svg {
@@ -97,7 +97,7 @@ svg {
   cursor: pointer;
 
   path {
-    transition: .2s;
+    transition: 0.2s;
 
     &:hover {
       fill: var(--color-blue);

@@ -1,5 +1,5 @@
-@use '../common/vars' as *;
-@use './media' as *;
+@use "../common/vars" as *;
+@use "./media" as *;
 
 @mixin container {
   max-width: map-get($widths, xl);

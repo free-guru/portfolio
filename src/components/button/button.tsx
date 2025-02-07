@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes, FC, ReactNode } from 'react';
+import { ButtonHTMLAttributes, FC, ReactNode } from "react";
 
-import { cn } from '@/helpers/helpers';
-import styles from './styles.module.scss';
+import { cn } from "@/helpers/helpers";
+import styles from "./styles.module.scss";
 
 type Props = {
   children: ReactNode;
@@ -9,10 +9,7 @@ type Props = {
 
 const Button: FC<Props> = ({ className, children, ...rest }) => {
   return (
-    <button
-      className={cn(styles.button, className)}
-      {...rest}
-    >
+    <button className={cn(styles.button, className)} {...rest}>
       {children}
     </button>
   );

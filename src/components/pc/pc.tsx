@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { FC, SVGProps, useState } from 'react';
+import { FC, SVGProps, useState } from "react";
 
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
 type Props = SVGProps<SVGSVGElement>;
 

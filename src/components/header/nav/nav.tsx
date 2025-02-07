@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
 
-import { cn } from '@/helpers/helpers';
-import styles from './styles.module.scss';
+import { cn } from "@/helpers/helpers";
+import styles from "./styles.module.scss";
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(false);
@@ -13,10 +13,10 @@ const Nav = () => {
   const closeNav = () => setShowNav(false);
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'portfolio', label: 'Portfolio' },
-    { id: 'contacts', label: 'Contacts' },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "portfolio", label: "Portfolio" },
+    { id: "contacts", label: "Contacts" },
   ];
 
   return (
@@ -30,11 +30,11 @@ const Nav = () => {
       </button>
 
       <ul className={styles.navList}>
-        {navItems.map(item => (
+        {navItems.map((item) => (
           <li key={item.id} className={styles.navItem}>
             <Link
               className={styles.navLink}
-              href={'/#' + item.id}
+              href={"/#" + item.id}
               onClick={closeNav}
             >
               {item.label}

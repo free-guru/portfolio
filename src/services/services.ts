@@ -1,1 +1,1 @@
-export { sendContactForm } from './send-contact-form';
+export { sendContactForm } from "./send-contact-form";
