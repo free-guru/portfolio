@@ -8,12 +8,16 @@
       .navToggle {
         overflow: hidden;
       }
-      
+
       .navToggleItem {
         transform: translateX(-24px);
-        
-        &::before { transform: translateX(24px) rotate(-45deg); }
-        &::after { transform: translateX(24px) rotate(45deg); }
+
+        &::before {
+          transform: translateX(24px) rotate(-45deg);
+        }
+        &::after {
+          transform: translateX(24px) rotate(45deg);
+        }
       }
 
       .navList {
@@ -36,11 +40,13 @@
   background: none;
   border: none;
   cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   position: relative;
   z-index: 1;
 
-  @include media-min(md) { display: none; }
+  @include media-min(md) {
+    display: none;
+  }
 }
 
 .navToggleItem {
@@ -53,7 +59,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     width: 20px;
     height: 3px;
     background-color: currentColor;
@@ -63,8 +69,12 @@
     transition: inherit;
   }
 
-  &::before { transform: translateY(7px); }
-  &::after { transform: translateY(-7px); }
+  &::before {
+    transform: translateY(7px);
+  }
+  &::after {
+    transform: translateY(-7px);
+  }
 }
 
 .navList {
@@ -80,13 +90,13 @@
     width: 100%;
     height: 100%;
     padding: 60px 30px 30px;
-    background-color: rgba(#000, .85);
+    background-color: rgba(#000, 0.85);
     box-sizing: border-box;
     position: fixed;
     top: 0;
     right: 0;
     transform: translateX(100%);
-    transition: .4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 }
 
@@ -94,12 +104,16 @@
   @include media-max(md) {
     margin-bottom: 30px;
 
-    &:first-child { margin-top: auto; }
-    &:last-child { margin-bottom: auto; }
+    &:first-child {
+      margin-top: auto;
+    }
+    &:last-child {
+      margin-bottom: auto;
+    }
   }
   @include media-min(md) {
     margin-right: 30px;
-  
+
     &:last-child {
       margin-right: 0;
     }
@@ -121,7 +135,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    transition: .4s;
+    transition: 0.4s;
   }
 
   &:hover,

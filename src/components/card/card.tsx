@@ -1,12 +1,12 @@
-import { FC } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { FC } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-import { cn } from '@/helpers/helpers';
-import { IconName } from '@/common/types/types';
-import { Icon } from '@/components/icon/icon';
-import { SocialLink } from '@/components/social-link/social-link';
-import styles from './styles.module.scss';
+import { cn } from "@/helpers/helpers";
+import { IconName } from "@/common/types/types";
+import { Icon } from "@/components/icon/icon";
+import { SocialLink } from "@/components/social-link/social-link";
+import styles from "./styles.module.scss";
 
 type Props = {
   img: string;
@@ -38,7 +38,7 @@ const Card: FC<Props> = ({
           width={650}
           height={800}
           src={img}
-          alt={title + 'home page'}
+          alt={title + "home page"}
         />
       </Link>
       <div className={styles.content}>

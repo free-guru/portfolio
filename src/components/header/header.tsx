@@ -1,6 +1,6 @@
-import { Logo } from '@/components/logo/logo';
-import { Nav } from './nav/nav';
-import styles from './styles.module.scss';
+import { Logo } from "@/components/logo/logo";
+import { Nav } from "./nav/nav";
+import styles from "./styles.module.scss";
 
 const Header = () => {
   return (

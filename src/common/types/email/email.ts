@@ -1,1 +1,1 @@
-export { type EmailData } from './email-data';
+export { type EmailData } from "./email-data";

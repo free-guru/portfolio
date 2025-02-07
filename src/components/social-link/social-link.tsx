@@ -1,10 +1,10 @@
-import { FC } from 'react';
-import Link from 'next/link';
+import { FC } from "react";
+import Link from "next/link";
 
-import { IconName } from '@/common/types/types';
-import { cn } from '@/helpers/helpers';
-import { Icon } from '@/components/icon/icon';
-import styles from './styles.module.scss';
+import { IconName } from "@/common/types/types";
+import { cn } from "@/helpers/helpers";
+import { Icon } from "@/components/icon/icon";
+import styles from "./styles.module.scss";
 
 type Props = {
   href: string;
@@ -12,7 +12,7 @@ type Props = {
   iconName: IconName;
   size?: number;
   className?: string;
-}
+};
 
 const SocialLink: FC<Props> = ({ href, title, iconName, size, className }) => {
   return (

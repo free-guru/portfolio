@@ -1,6 +1,6 @@
 .socialLink {
   display: block;
-  transition: .2s;
+  transition: 0.2s;
 
   &:hover,
   &:focus-visible {
@@ -8,4 +8,6 @@
   }
 }
 
-.socialIcon { display: block; }
+.socialIcon {
+  display: block;
+}

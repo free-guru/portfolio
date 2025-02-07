@@ -16,7 +16,7 @@
 
 @mixin link-hover($color: currentColor, $direction: center) {
   position: relative;
-  transition: .2s;
+  transition: 0.2s;
 
   &::before {
     content: "";
@@ -30,22 +30,34 @@
 
   &:hover,
   &:focus-visible {
-    &::before { width: 100%; }
+    &::before {
+      width: 100%;
+    }
   }
 
   @if $direction == center {
-    &::before { left: 50%; }
+    &::before {
+      left: 50%;
+    }
 
     &:hover,
     &:focus-visible {
-      &::before { left: 0; }
+      &::before {
+        left: 0;
+      }
     }
   } @else if $direction == right {
-    &::before { right: 0; }
+    &::before {
+      right: 0;
+    }
   } @else if $direction == left {
-    &::before { left: 0; }
+    &::before {
+      left: 0;
+    }
   } @else if $direction == to-right {
-    &::before { right: 0; }
+    &::before {
+      right: 0;
+    }
 
     &:hover,
     &:focus-visible {
@@ -55,7 +67,9 @@
       }
     }
   } @else if $direction == to-left {
-    &::before { left: 0; }
+    &::before {
+      left: 0;
+    }
 
     &:hover,
     &:focus-visible {
@@ -64,7 +78,6 @@
         left: auto;
       }
     }
-
   } @else {
     @error "Unknown direction #{$direction}.";
   }
